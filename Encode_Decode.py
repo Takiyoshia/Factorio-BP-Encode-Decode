@@ -116,12 +116,12 @@ def process_files_in_directory(input_directory, output_directory, process_functi
 choice = get_input_source()
 
 if choice == 'decode':
-    input_directory_path = "BPStrings"
-    output_directory_path = "Decoded"
+    input_directory_path = r"BPString"
+    output_directory_path = r"Decoded"
     process_function = decode_blueprint
 else:  # choice == 'encode'
-    input_directory_path = "BPJson"
-    output_directory_path = "Encoded"
+    input_directory_path = r"BPJson"
+    output_directory_path = r"Encoded"
     process_function = encode_blueprint
 
 process_files_in_directory(input_directory_path, output_directory_path, process_function)
